@@ -5,7 +5,7 @@ from classes.vehicle import Vehicle
 class Car(Vehicle):
     def __init__(self, license_plate,year):
         super().__init__(license_plate,year)
-        self.engine=Engine(None,None)
+        self.engine=Engine(10000,"95")
 
     def calculate_annual_tax(self):
         if self.get_year()>2020:
